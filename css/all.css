@@ -1,0 +1,105 @@
+body, dl, dd, h1, h2, h3, h4, h5, h6, p, form{margin:0;font: inherit;} 
+
+ ol,ul,li{margin:0; padding:0;list-style: none;}
+ 
+
+/* css start */
+*{
+   box-sizing: border-box;
+   font-family: Roboto;
+   font-weight: 400;
+}
+.wrap{
+    background-color: #FFFFFF;
+    margin: 0 auto;
+    width: 460px;
+}
+.cre-acc{
+    display: flex;
+    flex-direction: column;
+}
+.top-border{
+    border-top:5px solid  #0275D8;
+}
+.progress-bar>ul{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 50px;
+}
+.progress-bar>ul>li{
+    position: relative;
+    width: 20px;
+    height: 20px;
+    border: 2px solid #BEE1FF;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 11px;
+    color: #0275D8;
+}
+.progress-bar>ul>li:first-child:before {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    color: rgb(255, 255, 255);
+    border: 3px solid #0275D8;
+    border-radius: 10px;
+    top: -2px;
+    right: -2px;
+}
+.progress-bar>ul>li:after {
+	content: '';
+	width:76px;
+	height: 2px;
+	background: #BEE1FF;
+	position: absolute;
+	left: -78px;
+	top: 7px;
+}
+.progress-bar>ul>li:first-child:after {
+	content: none; 
+}
+.cre-acc h1{
+    text-align: center;
+    margin-top: 30px;
+    font-size: 48px;
+    font-weight: 300;
+}
+.cre-acc h3{
+    text-align: center;
+    margin-top: 5px;
+    font-size: 26px;
+}
+.cre-acc>form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+.cre-acc>form label{
+    font-weight: 500;
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+.cre-acc>form input{
+    border:2px solid black;
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 20px;
+}
+.send-btn{
+    margin-top: 30px;
+    background-color: #BEE1FF;
+    border: none;
+    color: #FFFFFF;
+    padding: 10px 15px;
+    font-size: 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.send-btn:hover{
+    color: rgb(245, 190, 88);
+    background: #0275D8;
+    transition: all 0.5s;
+}
